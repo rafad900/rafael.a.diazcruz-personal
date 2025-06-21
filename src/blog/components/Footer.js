@@ -12,14 +12,13 @@ import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
-import SitemarkIcon from './SitemarkIcon';
 
 function Copyright() {
   return (
     <Typography variant="body2" sx={{ color: 'text.secondary', mt: 1 }}>
       {'Copyright © '}
       <Link color="text.secondary" href="https://mui.com/">
-        Sitemark
+        
       </Link>
       &nbsp;
       {new Date().getFullYear()}
@@ -58,7 +57,6 @@ export default function Footer() {
             }}
           >
             <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-              <SitemarkIcon />
               <Typography
                 variant="body2"
                 gutterBottom
@@ -98,52 +96,7 @@ export default function Footer() {
               </Stack>
             </Box>
           </Box>
-          <Box
-            sx={{
-              display: { xs: 'none', sm: 'flex' },
-              flexDirection: 'column',
-              gap: 1,
-            }}
-          >
-            <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
-              Product
-            </Typography>
-            <Link color="text.secondary" variant="body2" href="#">
-              Features
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-              Testimonials
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-              Highlights
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-              Pricing
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-              FAQs
-            </Link>
-          </Box>
-          <Box
-            sx={{
-              display: { xs: 'none', sm: 'flex' },
-              flexDirection: 'column',
-              gap: 1,
-            }}
-          >
-            <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
-              Company
-            </Typography>
-            <Link color="text.secondary" variant="body2" href="#">
-              About us
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-              Careers
-            </Link>
-            <Link color="text.secondary" variant="body2" href="#">
-              Press
-            </Link>
-          </Box>
+{/*           
           <Box
             sx={{
               display: { xs: 'none', sm: 'flex' },
@@ -163,7 +116,7 @@ export default function Footer() {
             <Link color="text.secondary" variant="body2" href="#">
               Contact
             </Link>
-          </Box>
+          </Box> */}
         </Box>
         <Box
           sx={{
