@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/rafael.a.diazcruz-personal/static/css/main.f855e6bc.css",
-    "main.js": "/rafael.a.diazcruz-personal/static/js/main.24c3c5f6.js",
+    "main.js": "/rafael.a.diazcruz-personal/static/js/main.8a8d2b9f.js",
     "index.html": "/rafael.a.diazcruz-personal/index.html",
     "main.f855e6bc.css.map": "/rafael.a.diazcruz-personal/static/css/main.f855e6bc.css.map",
-    "main.24c3c5f6.js.map": "/rafael.a.diazcruz-personal/static/js/main.24c3c5f6.js.map"
+    "main.8a8d2b9f.js.map": "/rafael.a.diazcruz-personal/static/js/main.8a8d2b9f.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.24c3c5f6.js"
+    "static/js/main.8a8d2b9f.js"
   ]
 }
