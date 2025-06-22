@@ -29,7 +29,7 @@ function Copyright() {
 export default function Footer() {
   return (
     <React.Fragment>
-      <Divider />
+      <Divider sx={{ borderColor: 'white' }} />
       <Container
         sx={{
           display: 'flex',
@@ -125,7 +125,7 @@ export default function Footer() {
             pt: { xs: 4, sm: 8 },
             width: '100%',
             borderTop: '1px solid',
-            borderColor: 'divider',
+            borderColor: 'white',
           }}
         >
           <div>

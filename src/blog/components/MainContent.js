@@ -37,11 +37,10 @@ export default function MainContent() {
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-      <div>
-        <Typography variant="h1" gutterBottom> Rafael A. Diaz Cruz </Typography>
-      </div>
-
+    <Box sx={{ display: 'flex', flexDirection: 'column', textAlign: 'center' }}>
+      
+      <Typography variant="h1" gutterBottom > Rafael A. Diaz Cruz </Typography>
+      
       <Grid container spacing={2} columns={12}>
         {cardData.map((card, index) => (
           <ContentCard cardData={card} key={card.title} 
@@ -50,7 +49,6 @@ export default function MainContent() {
             handleBlur={handleBlur}
           />
         ))}
-        
       </Grid>
     </Box>
   );

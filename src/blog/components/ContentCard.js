@@ -9,7 +9,7 @@ import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
-
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 function Author({ authors }) {
   return (
@@ -92,6 +92,8 @@ const StyledTypography = styled(Typography)({
 });
 
 export default function ContentCard({ cardData, focusedCardIndex, handleFocus, handleBlur }) {
+  const navigate = useNavigate(); // Use useNavigate hook
+
   return (
     <Grid size={{ xs: 12, md: 6 }}>
       <SyledCard
@@ -100,6 +102,9 @@ export default function ContentCard({ cardData, focusedCardIndex, handleFocus, h
         onBlur={handleBlur}
         tabIndex={0}
         className={focusedCardIndex === 0 ? 'Mui-focused' : ''}
+        onClick={() => {
+          navigate('/blog', { state: cardData }); // Navigate to the blog post
+        }}
       >
         <CardMedia
           component="img"
