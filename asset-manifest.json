@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/rafael.a.diazcruz-personal/static/css/main.f855e6bc.css",
-    "main.js": "/rafael.a.diazcruz-personal/static/js/main.8a8d2b9f.js",
+    "main.css": "/rafael.a.diazcruz-personal/static/css/main.f36ff512.css",
+    "main.js": "/rafael.a.diazcruz-personal/static/js/main.f8659191.js",
     "index.html": "/rafael.a.diazcruz-personal/index.html",
-    "main.f855e6bc.css.map": "/rafael.a.diazcruz-personal/static/css/main.f855e6bc.css.map",
-    "main.8a8d2b9f.js.map": "/rafael.a.diazcruz-personal/static/js/main.8a8d2b9f.js.map"
+    "main.f36ff512.css.map": "/rafael.a.diazcruz-personal/static/css/main.f36ff512.css.map",
+    "main.f8659191.js.map": "/rafael.a.diazcruz-personal/static/js/main.f8659191.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.8a8d2b9f.js"
+    "static/css/main.f36ff512.css",
+    "static/js/main.f8659191.js"
   ]
 }
