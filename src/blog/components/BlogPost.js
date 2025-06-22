@@ -4,23 +4,12 @@ import Box from '@mui/material/Box';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { styled } from '@mui/material/styles';
 import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import { Container } from '@mui/material';
 import { useLocation } from 'react-router-dom'; // To demonstrate reading state
+import PostContentRenderer from './PostContentRenderer';
 
-
-const StyledTypography = styled(Typography)({
-  display: '-webkit-box',
-  WebkitBoxOrient: 'vertical',
-  WebkitLineClamp: 2,
-  overflow: 'hidden',
-  textOverflow: 'ellipsis',
-  fontSize: '1.3rem',
-  textAlign: 'left',
-  lineHeight: '1.5',
-});
 
 export default function BlogPost() {
 
@@ -43,7 +32,7 @@ export default function BlogPost() {
         </Box>
         <CardMedia component="img" image={stateFromNavigation.img} alt={stateFromNavigation.title} />
         <CardContent>
-          <StyledTypography>{stateFromNavigation.description}</StyledTypography>
+            <PostContentRenderer blocks={stateFromNavigation.content_blocks} />
         </CardContent>
       </Box>
     </Container>
