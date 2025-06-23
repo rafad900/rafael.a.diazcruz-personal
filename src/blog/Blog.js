@@ -14,7 +14,7 @@ export default function Blog(props) {
   
   return (
     <AppTheme {...props}>
-      <CssBaseline enableColorScheme />
+      <CssBaseline  />
       <Router basename="/rafael.a.diazcruz-personal">
         <Navigation />
         <Container
