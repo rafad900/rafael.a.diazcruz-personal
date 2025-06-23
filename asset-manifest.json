@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rafael.a.diazcruz-personal/static/css/main.79390fce.css",
-    "main.js": "/rafael.a.diazcruz-personal/static/js/main.1cd74dbb.js",
+    "main.css": "/rafael.a.diazcruz-personal/static/css/main.981a146a.css",
+    "main.js": "/rafael.a.diazcruz-personal/static/js/main.58e1397a.js",
     "static/media/KaTeX_AMS-Regular.ttf": "/rafael.a.diazcruz-personal/static/media/KaTeX_AMS-Regular.853be92419a6c3766b9a.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/rafael.a.diazcruz-personal/static/media/KaTeX_Main-Regular.9eba1d77abcf2aa6e94e.ttf",
     "static/media/KaTeX_Main-Bold.ttf": "/rafael.a.diazcruz-personal/static/media/KaTeX_Main-Bold.8169508bf58f8bd92ad8.ttf",
@@ -63,11 +63,11 @@
     "static/media/KaTeX_Size3-Regular.woff": "/rafael.a.diazcruz-personal/static/media/KaTeX_Size3-Regular.7947224e8a9914fa332b.woff",
     "static/media/KaTeX_Size3-Regular.woff2": "/rafael.a.diazcruz-personal/static/media/KaTeX_Size3-Regular.e1951519f6f0596f7356.woff2",
     "index.html": "/rafael.a.diazcruz-personal/index.html",
-    "main.79390fce.css.map": "/rafael.a.diazcruz-personal/static/css/main.79390fce.css.map",
-    "main.1cd74dbb.js.map": "/rafael.a.diazcruz-personal/static/js/main.1cd74dbb.js.map"
+    "main.981a146a.css.map": "/rafael.a.diazcruz-personal/static/css/main.981a146a.css.map",
+    "main.58e1397a.js.map": "/rafael.a.diazcruz-personal/static/js/main.58e1397a.js.map"
   },
   "entrypoints": [
-    "static/css/main.79390fce.css",
-    "static/js/main.1cd74dbb.js"
+    "static/css/main.981a146a.css",
+    "static/js/main.58e1397a.js"
   ]
 }
