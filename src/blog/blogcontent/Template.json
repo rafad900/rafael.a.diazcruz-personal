@@ -1,0 +1,105 @@
+{
+  "id": "your-post-id",
+  "title": "Your Blog Post Title Here",
+  "slug": "your-blog-post-slug-here",
+  "authors": [
+    { "name": "Your Name", "avatar": "https://example.com/your-avatar.jpg" }
+  ],
+  "img": "https://picsum.photos/800/450?random=2",
+  "tag": "Category or Tag for your post (e.g., Web Development, AI, Data Science)",
+  "description": "A concise summary of your blog post. This will be used in previews or meta descriptions.",
+  "published_date": "YYYY-MM-DDTHH:MM:SSZ",
+  "content_blocks": [
+    {
+      "id": "block-1",
+      "type": "heading",
+      "data": {
+        "level": 3,
+        "text": "Your First Main Section Heading"
+      }
+    },
+    {
+      "id": "block-2",
+      "type": "paragraph",
+      "data": {
+        "text": "Start your first paragraph here. This is where you introduce your topic or provide initial context. Keep paragraphs concise and easy to read."
+      }
+    },
+    {
+      "id": "block-3",
+      "type": "heading",
+      "data": {
+        "level": 4,
+        "text": "A Sub-Section Heading"
+      }
+    },
+    {
+      "id": "block-4",
+      "type": "paragraph",
+      "data": {
+        "text": "Continue with more detailed information. You can break down complex ideas into smaller, digestible paragraphs. Feel free to use **bold** or *italic* markdown if your rendering engine supports it within paragraph text."
+      }
+    },
+    {
+      "id": "block-image-example",
+      "type": "image",
+      "data": {
+        "src": "https://picsum.photos/600/350?random=3",
+        "alt": "Descriptive alt text for the image",
+        "caption": "An optional caption for your image. This helps explain the visual content."
+      }
+    },
+    {
+      "id": "block-code-example",
+      "type": "code",
+      "data": {
+        "language": "javascript",
+        "code": "function greet(name) {\n  console.log(`Hello, ${name}!`);\n}\n\ngreet('World');"
+      }
+    },
+    {
+      "id": "block-another-paragraph",
+      "type": "paragraph",
+      "data": {
+        "text": "You can intersperse code blocks, images, and other content types between paragraphs to make your post more engaging and informative."
+      }
+    },
+    {
+      "id": "block-list-example",
+      "type": "list",
+      "data": {
+        "type": "unordered",
+        "items": [
+          { "id": "list-item-1", "text": "First item in an unordered list." },
+          { "id": "list-item-2", "text": "Second item, perhaps with a sub-list:"},
+          { "id": "list-item-3", "text": "Third item." }
+        ]
+      }
+    },
+    {
+      "id": "block-latex-example",
+      "type": "latex",
+      "data": {
+        "formula": "E=mc^2",
+        "displayMode": false,
+        "caption": "Einstein's famous equation (optional caption for inline)."
+      }
+    },
+    {
+      "id": "block-latex-display-example",
+      "type": "latex",
+      "data": {
+        "formula": "\\int_a^b f(x) dx = F(b) - F(a)",
+        "displayMode": true,
+        "caption": "The Fundamental Theorem of Calculus (optional caption for display mode)."
+      }
+    },
+    {
+      "id": "block-final-thoughts",
+      "type": "paragraph",
+      "data": {
+        "text": "Conclude your blog post with a summary of key takeaways, future thoughts, or a call to action. Make it memorable!"
+      }
+    }
+  ]
+}

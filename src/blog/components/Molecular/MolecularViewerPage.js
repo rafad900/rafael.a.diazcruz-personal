@@ -90,7 +90,7 @@ function MolecularViewerPage() {
         backdropFilter: 'blur(15px)',
         border: '1px solid rgba(256, 256, 256, 0.4)',
         mx: 'auto', // Center horizontally
-        maxWidth: '900px' // Limit width for better layout
+        maxWidth: '1000px' // Limit width for better layout
       }}
     >
       <Typography variant="h4" component="h1" gutterBottom sx={{ }}>
@@ -112,7 +112,7 @@ function MolecularViewerPage() {
         ref={viewerRef}
         sx={{
           width: '100%',
-          height: '500px', // Fixed height for the viewer
+          height: '700px', // Fixed height for the viewer
           border: '3px solid red',
           borderColor: 'divider',
           borderRadius: '4px',

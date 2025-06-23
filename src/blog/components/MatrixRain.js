@@ -4,7 +4,7 @@ import React, { useRef, useEffect, useState, useCallback } from 'react';
 // This function takes all necessary drawing parameters as arguments
 const drawMatrixFrame = (ctx, canvas, drops, charArray, fontSize) => {
   // Clear canvas with translucent black for the trail effect
-  ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+  ctx.fillStyle = "rgba(0,0,0, 0.1)";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   // Set text style for the characters
@@ -37,6 +37,7 @@ const MatrixRain = () => {
   const lastFrameTime = useRef(0);
   const THROTTLE_INTERVAL = 50; // Throttle to roughly 20 FPS (1000ms / 20 = 50ms)
 
+
   const [canvasDimensions, setCanvasDimensions] = useState({
     width: window.innerWidth - 10,
     height: window.innerHeight,
@@ -62,7 +63,7 @@ const MatrixRain = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    canvas.width = canvasDimensions.width - 10;
+    canvas.width = canvasDimensions.width ;
     canvas.height = canvasDimensions.height;
 
     initializeDrops(canvasDimensions.width);
@@ -80,7 +81,7 @@ const MatrixRain = () => {
         lastFrameTime.current = now; // Update last draw time
 
         // Call the separate drawing helper function
-        drawMatrixFrame(ctx, canvas, dropsRef.current, charArray, fontSize);
+        drawMatrixFrame(ctx, canvas, dropsRef.current, charArray, fontSize );
       }
     };
 
@@ -114,7 +115,7 @@ const MatrixRain = () => {
   return (
     <canvas
       ref={canvasRef}
-      style={{ display: 'block', background: 'black' }}
+      style={{ display: 'block' }}
     ></canvas>
   );
 };

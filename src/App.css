@@ -1,8 +1,6 @@
 .App {
   position: relative; /* Needed if main-content or other children use absolute positioning */
   min-height: 100vh; /* Ensure App covers at least full viewport height */
-  /* Remove background from .App if MatrixRain covers fully */
-  background-color: black; /* Or any fallback color */
 }
 
 .matrix-background-container {

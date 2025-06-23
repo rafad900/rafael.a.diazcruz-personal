@@ -12,7 +12,7 @@ import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-
+import ColorModeIconDropdown from '../../shared-theme/ColorModeIconDropdown';
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
@@ -63,21 +63,23 @@ export default function AppAppBar() {
               </Button>
             </Box>
           </Box>
-          {/* <Box
+          <Box
             sx={{
               display: { xs: 'none', md: 'flex' },
               gap: 1,
               alignItems: 'center',
             }}
           >
-            <Button color="primary" variant="text" size="small">
+            {/* <Button color="primary" variant="text" size="small">
               Sign in
             </Button>
             <Button color="primary" variant="contained" size="small">
               Sign up
-            </Button>
-          </Box> */}
+            </Button> */}
+            <ColorModeIconDropdown />
+          </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' }, gap: 1 }}>
+            <ColorModeIconDropdown size="medium" />
             <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
               <MenuIcon />
             </IconButton>
