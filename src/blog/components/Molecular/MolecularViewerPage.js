@@ -9,7 +9,7 @@ function MolecularViewerPage() {
   const [error, setError] = useState(null);
   const [moleculeData, setMoleculeData] = useState(null); // State to store fetched molecule data
 
-  const moleculeUrl = "http://localhost:3000/rafael.a.diazcruz-personal/8HEX.cif"
+  const moleculeUrl = "https://rafad900.github.io/rafael.a.diazcruz-personal/8HEX.cif"
   const moleculeName = "C5 portal vertex in HCMV B-capsid"
 
   useEffect(() => {
