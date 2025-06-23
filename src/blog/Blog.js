@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BlogPost from './components/BlogPost';
+import MolecularViewerPage from './components/Molecular/MolecularViewerPage';
 
 
 export default function Blog(props) {
@@ -23,6 +24,7 @@ export default function Blog(props) {
           <Routes>
             <Route path="/" element={<MainContent />} />
             <Route path="/blog" element={<BlogPost />} />
+            <Route path="/molecular" element={<MolecularViewerPage />} />
           </Routes>
         </Container>
       </Router>

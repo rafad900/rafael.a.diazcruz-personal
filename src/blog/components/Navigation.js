@@ -58,9 +58,12 @@ export default function AppAppBar() {
               <Button variant="text" color="info" size="small" onClick={() => navigate('/')}>
                 Home
               </Button>
+              <Button variant="text" color="info" size="small" onClick={() => navigate('/molecular')}>
+                Molecular
+              </Button>
             </Box>
           </Box>
-          <Box
+          {/* <Box
             sx={{
               display: { xs: 'none', md: 'flex' },
               gap: 1,
@@ -73,7 +76,7 @@ export default function AppAppBar() {
             <Button color="primary" variant="contained" size="small">
               Sign up
             </Button>
-          </Box>
+          </Box> */}
           <Box sx={{ display: { xs: 'flex', md: 'none' }, gap: 1 }}>
             <IconButton aria-label="Menu button" onClick={toggleDrawer(true)}>
               <MenuIcon />
@@ -99,9 +102,10 @@ export default function AppAppBar() {
                     <CloseRoundedIcon />
                   </IconButton>
                 </Box>
-                <MenuItem>Features</MenuItem>
+                <MenuItem onClick={() => navigate('/')}>Home</MenuItem>
+                <MenuItem onClick={() => navigate('/molecular')}>Molecular</MenuItem>
                 <Divider sx={{ my: 3 }} />
-                <MenuItem>
+                {/* <MenuItem>
                   <Button color="primary" variant="contained" fullWidth>
                     Sign up
                   </Button>
@@ -110,7 +114,7 @@ export default function AppAppBar() {
                   <Button color="primary" variant="outlined" fullWidth>
                     Sign in
                   </Button>
-                </MenuItem>
+                </MenuItem> */}
               </Box>
             </Drawer>
           </Box>
