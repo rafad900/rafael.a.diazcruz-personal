@@ -19,6 +19,13 @@
       }
     },
     {
+      "id": "network-image",
+      "type": "image",
+      "data": {
+        "src": "https://example-image-url.com/image.jpg",
+      }
+    },
+    {
       "id": "block-2",
       "type": "paragraph",
       "data": {
