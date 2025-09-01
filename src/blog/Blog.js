@@ -8,6 +8,7 @@ import Navigation from './components/Navigation';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import BlogPost from './components/BlogPost';
 import MolecularViewerPage from './components/Molecular/MolecularViewerPage';
+import AboutMe from './aboutme/aboutme';
 
 
 export default function Blog(props) {
@@ -25,6 +26,7 @@ export default function Blog(props) {
             <Route path="/" element={<MainContent />} />
             <Route path="/blog" element={<BlogPost />} />
             <Route path="/molecular" element={<MolecularViewerPage />} />
+            <Route path='/aboutme' element={<AboutMe />} />
           </Routes>
         </Container>
       </Router>

@@ -61,6 +61,9 @@ export default function AppAppBar() {
               <Button variant="text" color="info" size="small" onClick={() => navigate('/molecular')}>
                 Molecular
               </Button>
+              <Button variant="text" color="info" size="small" onClick={() => navigate('/aboutme')}>
+                About Me
+              </Button>
             </Box>
           </Box>
           <Box
@@ -106,6 +109,7 @@ export default function AppAppBar() {
                 </Box>
                 <MenuItem onClick={() => navigate('/')}>Home</MenuItem>
                 <MenuItem onClick={() => navigate('/molecular')}>Molecular</MenuItem>
+                <MenuItem onClick={() => navigate('/aboutme')}>About Me</MenuItem>
                 <Divider sx={{ my: 3 }} />
                 {/* <MenuItem>
                   <Button color="primary" variant="contained" fullWidth>

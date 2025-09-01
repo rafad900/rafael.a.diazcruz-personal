@@ -56,7 +56,7 @@ export default function Footer() {
               minWidth: { xs: '100%', sm: '60%' },
             }}
           >
-            <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
+            {/* <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
               <Typography
                 variant="body2"
                 gutterBottom
@@ -94,7 +94,7 @@ export default function Footer() {
                   Subscribe
                 </Button>
               </Stack>
-            </Box>
+            </Box> */}
           </Box>
 {/*           
           <Box
@@ -149,7 +149,7 @@ export default function Footer() {
             <IconButton
               color="inherit"
               size="small"
-              href="https://github.com/mui"
+              href="https://github.com/rafad900"
               aria-label="GitHub"
               sx={{ alignSelf: 'center' }}
             >
@@ -158,7 +158,7 @@ export default function Footer() {
             <IconButton
               color="inherit"
               size="small"
-              href="https://x.com/MaterialUI"
+              href="https://x.com/rafad900"
               aria-label="X"
               sx={{ alignSelf: 'center' }}
             >
@@ -167,7 +167,7 @@ export default function Footer() {
             <IconButton
               color="inherit"
               size="small"
-              href="https://www.linkedin.com/company/mui/"
+              href="https://www.linkedin.com/in/rafaelalejandrodiazcruz/"
               aria-label="LinkedIn"
               sx={{ alignSelf: 'center' }}
             >
