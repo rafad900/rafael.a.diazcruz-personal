@@ -55,12 +55,12 @@ Author.propTypes = {
 };
 
 
-const SyledCard = styled(Card)(({ theme }) => ({
+const StyledCard = styled(Card)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   padding: 0,
   height: '100%',
-  backgroundColor: (theme.vars || theme).palette.background.paper,
+  backgroundColor: 'transparent',
   '&:hover': {
     backgroundColor: 'transparent',
     cursor: 'pointer',
@@ -72,7 +72,7 @@ const SyledCard = styled(Card)(({ theme }) => ({
   },
 }));
 
-const SyledCardContent = styled(CardContent)({
+const StyledCardContent = styled(CardContent)({
   display: 'flex',
   flexDirection: 'column',
   gap: 4,
@@ -95,8 +95,8 @@ export default function ContentCard({ cardData, focusedCardIndex, handleFocus, h
   const navigate = useNavigate(); // Use useNavigate hook
 
   return (
-    <Grid size={{ xs: 12, md: 6 }}>
-      <SyledCard
+    <Grid item xs={12} md={6}>
+      <StyledCard
         variant="outlined"
         onFocus={() => handleFocus(0)}
         onBlur={handleBlur}
@@ -116,7 +116,7 @@ export default function ContentCard({ cardData, focusedCardIndex, handleFocus, h
             borderColor: 'divider',
           }}
         />
-        <SyledCardContent>
+        <StyledCardContent>
           <Typography gutterBottom variant="caption" component="div">
             {cardData.tag}
           </Typography>
@@ -126,9 +126,9 @@ export default function ContentCard({ cardData, focusedCardIndex, handleFocus, h
           <StyledTypography variant="body2" color="text.secondary" gutterBottom>
             {cardData.description}
           </StyledTypography>
-        </SyledCardContent>
+          </StyledCardContent>
         <Author authors={cardData.authors} />
-      </SyledCard>
+        </StyledCard>
     </Grid>
   )
 };
